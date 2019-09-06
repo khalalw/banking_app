@@ -8,8 +8,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import IconButton from "@material-ui/core/IconButton";
 import ListItemText from "@material-ui/core/ListItemText";
-import DashboardIcon from "@material-ui/icons/Dashboard";
-import SearchIcon from "@material-ui/icons/Search";
+import SyncIcon from "@material-ui/icons/Sync";
+import SwapIcon from "@material-ui/icons/SwapHoriz";
 import { NavLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 
@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function SideDrawer(props) {
-  const drawerIcons = [<DashboardIcon />, <SearchIcon />];
+  const drawerIcons = [<SwapIcon />, <SyncIcon />];
   const routes = ["/", "/transfer-activity"];
   const styles = useStyles();
 
